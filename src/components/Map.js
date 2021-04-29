@@ -15,7 +15,7 @@ const markers = eventData.map(ev => {
     <div className="map">
       <GoogleMap
         //this key needs to be hidden (.env or on server)
-        bootstrapURLKeys={{ key: 'AIzaSyBYgDmN2G0xMhz4od_rTx99x2BFi7L1hic' }}
+        bootstrapURLKeys={{ key:  }}
         defaultCenter={center}
         defaultZoom={zoom}
       >
