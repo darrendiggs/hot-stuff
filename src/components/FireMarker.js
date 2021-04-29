@@ -1,6 +1,6 @@
 
 
-const LocationMarker = ({ lat, lng, onClick }) => {
+const FireMarker = ({ lat, lng, onClick }) => {
   return (
     <div className="location-marker" onClick={onClick}>
       <h4 className="location-marker">🔥</h4>
@@ -8,4 +8,4 @@ const LocationMarker = ({ lat, lng, onClick }) => {
   )
 }
 
-export default LocationMarker
+export default FireMarker
