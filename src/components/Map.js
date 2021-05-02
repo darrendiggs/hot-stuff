@@ -5,6 +5,7 @@ import FireMarker from './FireMarker'
 import VolcanoMarker from './VolcanoMarker'
 import EventInfoBox from './EventInfoBox'
 
+
 const Map = ({ eventData, center, zoom }) => {
 
   const [locationInfo, setlocationInfo] = useState(null)
@@ -28,17 +29,34 @@ const Map = ({ eventData, center, zoom }) => {
   })
 
   return (
-    <div className="map container my-auto">
-      <GoogleMap
-        //this key needs to be hidden (.env or on server)
-        bootstrapURLKeys={{ key:  }}
-        defaultCenter={center}
-        defaultZoom={zoom}
-      >
-        {markers}
-      </GoogleMap>
-      {locationInfo && <EventInfoBox info={locationInfo} />}
-    </div>
+    <>
+      <div className="row">
+        <div className="col">
+          <h1 className="title text-center fw-bold ">🥵 HOT STUFF</h1>
+        </div>
+      </div>
+      <div className="map conatiner-fluid ">
+        <GoogleMap
+          //this key needs to be hidden (.env or on server)
+          bootstrapURLKeys={{ key: '' }}
+          defaultCenter={center}
+          defaultZoom={zoom}
+        >
+          {markers}
+
+        </GoogleMap>
+        {locationInfo && <EventInfoBox
+          info={locationInfo}
+          className="eventInfo mx-auto"
+          setlocationInfo={setlocationInfo}
+        />}
+      </div>
+      <div className="row">
+        <div className="col">
+          <h3 className="text-center nasaBanner">Powered By NASA</h3>
+        </div>
+      </div>
+    </>
   )
 }
 

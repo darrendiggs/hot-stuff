@@ -1,13 +1,19 @@
 
 
-function EventInfoBox({ info }) {
+import { Toast, ToastBody } from 'reactstrap';
+
+function EventInfoBox(props) {
   return (
-    <div>
-      <h1>Event Info</h1>
-      <p>Id: {info.id}</p>
-      <p>Title: {info.title}</p>
+    <div className="eventInfo">
+
+      <Toast onClick={() => props.setlocationInfo(null)}>
+        <ToastBody>
+          <p>{props.info.title}</p>
+          <p>Id: {props.info.id}</p>
+          </ToastBody>
+      </Toast>
     </div>
   )
-}
+} 
 
 export default EventInfoBox
