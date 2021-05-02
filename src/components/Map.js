@@ -37,8 +37,7 @@ const Map = ({ eventData, center, zoom }) => {
       </div>
       <div className="map conatiner-fluid ">
         <GoogleMap
-          //this key needs to be hidden (.env or on server)
-          bootstrapURLKeys={{ key: '' }}
+          bootstrapURLKeys={{ key: 'AIzaSyBYgDmN2G0xMhz4od_rTx99x2BFi7L1hic' }}
           defaultCenter={center}
           defaultZoom={zoom}
         >
