@@ -33,3 +33,10 @@ body {
 .emoji {
   font-size: 2.2rem;
 }
+
+@media (max-width: 576px){
+.emoji {
+  font-size: 1.4rem;
+}
+} 
+
