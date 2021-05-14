@@ -32,7 +32,7 @@ const Map = ({ eventData, center, zoom }) => {
     <>
       <div className="row">
         <div className="col">
-          <h1 className="title text-center fw-bold ">🥵 HOT STUFF</h1>
+          <h1 className="title text-center fw-bold ">H<span className="emoji">🥵</span>T STUFF</h1>
         </div>
       </div>
       <div className="map conatiner-fluid ">
